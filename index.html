@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+<style>
+    body{
+        background-color:rgb(112, 123, 119);
+    }
+    .b{
+        display: inline-block;
+        border: 9px solid peru;
+        color:black;
+        background-color: peru;
+        text-align: center;
+
+    }
+    .b:hover{
+        color: black;
+        border: 9px solid rgb(192, 250, 255);
+background-color: rgb(192, 250, 255);
+    }
+    .h{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+       
+        font-style: italic;
+        border: 5px solid #131314;
+        display: inline-block;
+        left:40%;
+        position: relative;
+
+    }
+   
+    img{
+        width: 100%;
+        height:500px;
+    }
+    .p {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        animation-name: index;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        position: relative; 
+        text-align: center;
+        top:50%;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+    }
+
+   
+    @media screen and (min-width: 100px) {
+        .h {
+            font-size: 14px; 
+            left: 1%;
+            font-style: italic;
+        border: 5px solid #131314;
+        display: inline-block;
+        position: relative;
+        }
+        .b{
+            border: 4px solid rgb(192, 250, 255);
+        }
+        img{
+        width: 100%;
+        height:150px;
+    }
+    @keyframes index {
+        0%   { left:0px; top:300px; }
+        25%  { left:100px; top:300px; }
+        50%  { left:200px; top:300px; }
+        100% { left:0px; top:300px; }
+    }
+    }
+    @media screen and (min-width: 620px) {
+        .h {
+            font-size: 20px; 
+            left: 10%;
+            
+            font-style: italic;
+        border: 5px solid #131314;
+        display: inline-block;
+        position: relative;
+
+        }
+        .b{
+            border: 6px solid rgb(192, 250, 255);
+        }
+        
+        img{
+        width: 100%;
+        height:250px;
+    }
+    @keyframes index {
+        0%   { left:0px; top:400px; }
+        25%  { left:100px; top:400px; }
+        50%  { left:200px; top:400px; }
+        100% { left:0px; top:400px; }
+    }
+    }
+    @media screen and (min-width: 960px) {
+        .h {
+            font-size: 24px; 
+            left: 20%;
+
+        }
+        .b{
+            border: 7px solid rgb(192, 250, 255);
+        }
+        img{
+        width: 100%;
+        height:400px;
+    }
+    @keyframes index {
+        0%   { left:0px; top:400px; }
+        25%  { left:100px; top:400px; }
+        50%  { left:200px; top:400px; }
+        100% { left:0px; top:400px; }
+    }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .h{
+            left:25%;
+        }
+        .b{
+            border: 4px solid rgb(192, 250, 255);
+        }
+        img{
+        width: 100%;
+        height:300px;
+    }
+    @keyframes index {
+        0%   { left:0px; top:450px; }
+        25%  { left:100px; top:450px; }
+        50%  { left:200px; top:450px; }
+        100% { left:0px; top:450px; }
+    }
+    }
+</style>
+</head>
+<body>
+    <div class="h">
+    <h1>Welcome to the index page</h1>
+    </div>
+    <div class="p">
+        Hello
+
+    </div>
+    <img class="d" src="Capture.PNG" alt="welcome">
+    <div class="button">
+        <a href="HomeTown.html" class="b">Go to HomeTown page</a>
+        <a href="university.html" class="b">Go to university page</a>
+        <a href="aboutme.html" class="b">Go to About me page</a>
+
+             
+       
+    </div>
+</body>
+</html>
